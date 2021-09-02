@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/book.png" type="image/x-icon">
   <title>book-archive</title>
   <!-- bs5 added  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -16,19 +17,22 @@
     <div class="row">
       <div class="col-4" id="search">
           <h2 class="text-center mt-2 text-white">Search Your Books</h2>
+          <hr class="text-white">
+          <!-- Error message -->
+        <p id="empty-field" class="text-center bg-danger text-white rounded h3"></p>
         <!-- search box  -->
-        <div class="input-group mb-3">
-          <input id="input-field" value="javascript" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button  class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
+        <div class="input-group mb-3 mt-3">
+          <input id="input-field"  type="text" class="form-control fw-bold" placeholder="Search Your Books" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button  class="btn btn-outline-secondary fw-bold text-white" type="button" id="search-btn">Search</button>
         </div>
-        
-          </div>
-      <!-- search btn  -->
-      <!-- show details  -->
+        <!-- total element found -->
+        <p id="total-results" class="text-center text-white bg-danger rounded"></p> 
+      </div>
+
+
+      <!---------- books details  -------->
       <div class="col-8">
-         <!-- books result  -->
-        <div class="container d-flex flex-wrap justify-content-center" id="book-result">
-          
+        <div class="container d-flex flex-wrap justify-content-center" id="book-result"> 
         </div>
       </div>
     </div>
