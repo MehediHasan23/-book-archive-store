@@ -29,7 +29,6 @@ const loadData =(dataList)=>{
     </div>
     
     `
-    
     bookResult.appendChild(div);
  
   })
