@@ -1,0 +1,15 @@
+body{
+  background-color: lightgreen;
+}
+#search{
+  border: 2px solid rgb(0, 0, 0);
+  height: 90vh;
+  margin-top: 20px;
+}
+#book-result{
+  border: 2px solid rgb(0, 0, 0);
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-top: 20px;
+}
