@@ -9,9 +9,10 @@ document.getElementById('search-btn').addEventListener('click', ()=>{
 })
 
 const loadData =(dataList)=>{
+
   const bookResult = document.getElementById("book-result")
   // console.log(dataList);
-  
+  bookResult.innerHTML='';
   dataList.forEach(data =>{
     const div = document.createElement('div'); 
     console.log(data);
@@ -23,14 +24,13 @@ const loadData =(dataList)=>{
       <h5 class="card-title">Books Name : ${data.title}</h5>
       <p class="card-title">Author Name : ${data.author_name[0]}</p>
       <p class="card-title">Publisher : ${data.publisher}</p>
-      <p class="card-title">Publish Date : ${data.publish_date}</p>
+      <p class="card-title">1st Publish Date : ${data.first_publish_year}</p>
       </div>
     </div>
     
     `
-    bookResult.innerHTML=''
+    
     bookResult.appendChild(div);
-    
-    
+ 
   })
 }
