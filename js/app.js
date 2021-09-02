@@ -45,7 +45,7 @@ const loadData =(bookList)=>{
   bookResult.innerHTML='';
   books.forEach(data =>{
     const div = document.createElement('div'); 
-    console.log(data);
+    // console.log(data);
     div.innerHTML = `
     
     <div class="card m-2" style="width: 18rem; height:450px;" >
