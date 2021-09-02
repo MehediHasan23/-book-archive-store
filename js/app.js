@@ -41,7 +41,7 @@ const loadData =(bookList)=>{
     totalFoundResults.innerText = `No Results Found`
     // return;
   }else{
-  totalFoundResults.innerText = `About ${totalResult} Results & Book showing ${books.length}`;
+  totalFoundResults.innerText = `About ${totalResult} Results & ${books.length} Book showing`;
   bookResult.innerHTML='';
   books.forEach(data =>{
     const div = document.createElement('div'); 
