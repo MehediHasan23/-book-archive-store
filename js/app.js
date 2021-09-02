@@ -13,7 +13,7 @@ const loadData =(dataList)=>{
   // console.log(dataList);
   
   dataList.forEach(data =>{
-    const div = document.createElement('div');
+    const div = document.createElement('div'); 
     console.log(data);
     div.innerHTML = `
     
@@ -28,7 +28,9 @@ const loadData =(dataList)=>{
     </div>
     
     `
+    bookResult.innerHTML=''
     bookResult.appendChild(div);
-    // bookResult.innerHTML=''
+    
+    
   })
 }

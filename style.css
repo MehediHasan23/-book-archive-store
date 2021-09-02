@@ -1,5 +1,8 @@
 body{
   background-color: lightgreen;
+  background-image: url(images/books-library.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #search{
   border: 2px solid rgb(0, 0, 0);
